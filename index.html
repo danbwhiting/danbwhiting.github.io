@@ -1,35 +1,768 @@
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<!DOCTYPE html>
-<head>
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"bf4f7a4ef2","applicationID":"6146642","transactionName":"cA4KTURWXl8GRR4QQlYTO0lEVlhWAENCSkJbDhNmQVZAWA==","queueTime":3,"applicationTime":24,"agent":"js-agent.newrelic.com/nr-686.min.js"}</script>
-<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):void(r.q&&(r.q[e]||(r.q[e]=[]),r.q[e].push(n)))}var r=e("ee").create();n.exports=t,t.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=window,f=u.document;e(2);var s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
-  <title>Dan Whiting</title>
-  <style>
-    body {
-      text-align: center;
-      background: url("i/cofffee_outdoors_dpc_copy.jpg");
-      background-color: black;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      color: black;
-      font-family: helvetica;
-    }
-    p {
-      font-size: 26px;
-      color: black;
-    }
-    input {
-      border: 0;
-      padding: 10px;
-      font-size: 18px;
-    }
-    input[type="submit"] {
-      background: brown;
-      color: white;
-    }
-  </style>
-</head>
-<body>
-  <p>While my site is being built, why don't you enjoy<br>some coffee and read my posts at<br><a href="https://www.linkedin.com/in/danwhiting"><img src="i/linkedin.png"></a></p>  
-</body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,600,700,800,400' rel='stylesheet' type='text/css'> 
+
+		<link href="vendor/flexslider/flexslider.css" rel="stylesheet">
+		<link href="vendor/prettyphoto/css/prettyPhoto.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		
+		<title>Dan Whiting</title>
+
+	</head>
+	<body>
+		<!-- Header -->
+		<div id="menu">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+				  		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-content">
+						    <span class="sr-only">Toggle navigation</span>
+						    <span class="icon-bar"></span>
+						    <span class="icon-bar"></span>
+						    <span class="icon-bar"></span>
+					  	</button>
+						  <a class="navbar-brand" href="#">
+					  		<!--<img src="img/other/dan_whiting_logo-md-white.png">--> <span>Dan Whiting</span>
+						  </a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="menu-content">
+				  		<ul class="nav navbar-nav navbar-right">
+						    <li><a href="#">Home</a></li>
+						    <li><a href="#service">Services</a></li>
+						    <li><a href="#experience">Profile</a></li>
+						    <li><a href="#projects">Projects</a></li>
+<!-- 						    <li><a href="#testimonial">Testimonials</a></li>
+ -->						    <li><a href="#contact">Contact</a></li>
+				  		</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+		</div>
+		<header>
+			<img src="img/background/tablet/mac-working-desk.jpeg" class="hidden-xs big-header">
+			<img src="img/background/mobile/mac-working-desk.jpeg" class="visible-xs big-header">	
+			<div class="container">
+				<h2 class="main-headline">Well. Said.</h2>
+			</div>
+		</header>
+		
+		<!-- Service section -->
+		<section id="service" class="feature">
+			<div class="container">
+				<div class="row">
+					<h2 class="sec-title">Services</h2>
+				</div>
+				<div class="row">
+					<div class="col-sm-3 item">
+						<div class="i-wrapper">
+							<i class="fa fa-puzzle-piece fa-fw">
+			            	</i>
+			            </div>
+						<h4>Strategy</h4>
+						<div class="sep"></div>
+						<p>
+							We don't just throw darts at the board. We help you aim to win. 
+						</p>
+					</div>
+					<div class="col-sm-3 item">
+						<div class="i-wrapper">
+							<i class="fa fa-pencil fa-fw"></i>
+						</div>
+						<h4>Writing</h4>
+						<div class="sep"></div>
+						<p>
+							A picture is worth a thousand words - but you still need words. 
+						</p>
+					</div>
+					<div class="col-sm-3 item">
+						<div class="i-wrapper">
+							<i class="fa fa-camera fa-fw"></i>
+						</div>
+						<h4>Media Relations</h4>
+						<div class="sep"></div>
+						<p>
+							Relations is the key word in media relations. Positive coverage requires working with reporters. 
+						</p>
+					</div>
+					<div class="col-sm-3 item">
+						<div class="i-wrapper">
+							<i class="fa fa-male fa-fw"></i>
+						</div>
+						<h4>Grassroots</h4>
+						<div class="sep"></div>
+						<p>
+							"All politics is local." Helping constituents voice their views is the difference between winning and losing. 
+						</p>
+					</div>
+					<div class="col-sm-3 item">
+						<div class="i-wrapper">
+							<i class="fa fa-institution fa-fw"></i>
+						</div>
+						<h4>Government Affairs</h4>
+						<div class="sep"></div>
+						<p>
+							Laws are passed and then enacted. Both steps are key. 
+						</p>
+					</div>
+					<div class="col-sm-3 item">
+						<div class="i-wrapper">
+							<i class="fa fa-globe fa-fw"></i>
+						</div>
+						<h4>Web Development</h4>
+						<div class="sep"></div>
+						<p>
+							New media is no longer new - it is necessary. 
+						</p>
+					</div>
+					<div class="col-sm-3 item">
+						<div class="i-wrapper">
+							<i class="fa fa-book fa-fw"></i>
+						</div>
+						<h4>Content Marketing</h4>
+						<div class="sep"></div>
+						<p>
+							Content marketing is social + blog + print + white papers + well, you get the idea. You are the thought leader. Let the world know. 
+						</p>
+					</div>
+					<div class="col-sm-3 item">
+						<div class="i-wrapper">
+							<i class="fa fa-laptop fa-fw"></i>
+						</div>
+						<h4>Digital Marketing</h4>
+						<div class="sep"></div>
+						<p>
+							Selling your ideas and products with the latest technology. 
+						</p>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!-- End of sevice section -->
+
+		<!-- Emphasize section -->
+	<!-- 	<section id="emphasize" class="center-back">
+			<img src="img/background/tablet/02_Background_image_2.jpg" alt="" class="hidden-xs">
+			<img src="img/background/mobile/02_Background_image_2.jpg" alt="" class="visible-xs">
+			<div class="center-text">
+				<p>
+					My design is </br>
+					about sexy
+				</p>
+			</div>
+		</section> -->
+		<!-- End emphasize section -->
+
+		<!-- Parallax-->
+		<section class="parallax back1" id="emphasize">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<p>
+							Results driven.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Experience-->
+		<section id="experience">
+			<div class="container">
+				<div class="row">
+					<h2>Resume</h2>
+					<div class="lt-exp-wrapper"> 
+						<div class="flexslider">
+					  		<ul class="slides">
+
+					  			<!-- First Company Info-->
+						    	<li>
+						    		<div class="clearfix">
+										<div class="lt-house hidden-sm">
+										</div>
+										<div class="col-sm-12 lt-exp-content">
+											<h4>
+												<span>
+													<i class="fa fa-briefcase"></i>
+												</span>
+												<span class="text">
+													ADG Creative
+												</span>
+											</h4>
+											<p>
+												<b>Senior Strategist</b> from 2011-2016
+											</p>
+											<ul>
+												<li>
+													<i class="fa fa-circle"></i>Set the strategic direction for each project
+												</li>
+												<li>
+													<i class="fa fa-circle"></i>Oversaw the implementation of the project from concept to delivery
+												</li>
+												<li>
+													<i class="fa fa-circle"></i>Projects included web applications, web sites, video dramatizations, e-learning, briefings, posters, brochres, and content marketing  
+												</li>
+											</ul>
+										</div>
+										<div class="lt-time">
+											<p></p>
+										</div>	
+									</div>
+								</li>
+
+								<!-- Second Company Info-->
+ 								<li>
+									<div class="clearfix">
+										<div class="lt-house hidden-sm">
+										</div>
+										<div class="col-sm-12 lt-exp-content">
+											<h4>
+												<span>
+													<i class="fa fa-briefcase"></i>
+												</span>
+												<span class="text">
+													National Alliance of Forest Owners
+												</span>
+											</h4>
+											<p>
+												<b>Director of Communications</b> from 2009-2011
+											</p>
+											<ul>
+												<li>
+													<i class="fa fa-circle"></i>Established communication capabilities for a start-up trade association
+												</li>
+												<li>
+													<i class="fa fa-circle"></i>Oversaw the planning and execution of a multi-state grassroots/grasstops advocacy campaign 
+												</li>												
+												<li>
+													<i class="fa fa-circle"></i>Developed relationships with national and regional media
+												</li>
+												<li>
+													<i class="fa fa-circle"></i>Wrote web content, press releases, brochures, white papers, and internal communication pieces
+												</li>
+												<li>
+													<i class="fa fa-circle"></i>Executed social media marketing
+												</li>
+
+												<li>
+													<i class="fa fa-circle"></i>Collaborated with subject matter experts on research projects and translating the finindings into consumable talking points 
+												</li>
+											</ul>
+										</div>
+										<div class="lt-time">
+											<p></p>
+										</div>	
+									</div>
+								</li> 
+
+ 								<!-- Third company info -->
+ 								<li>
+									<div class="clearfix">
+										<div class="lt-house hidden-sm">
+										</div>
+										<div class="col-sm-12 lt-exp-content">
+											<h4>
+												<span>
+													<i class="fa fa-briefcase"></i>
+												</span>
+												<span class="text">
+													USDA Natural Resources Conservation Service
+												</span>
+											</h4>
+											<p>
+												<b>Chief of Staff</b> from 2008-2009
+											</p>
+											<ul>
+												<li>
+													<i class="fa fa-circle"></i>Collaborated with senior officials on the implementation of policies and budgets consistent with President Bush's priorities
+												</li>
+												<li>
+													<i class="fa fa-circle"></i>Supervised the political appointees within the Office of the Chief
+												</li>
+												<li>
+													<i class="fa fa-circle"></i>Monitored implementation of the 2008 Farm Bill's conservation provisions
+												</li>
+
+											</ul>
+										</div>
+										<div class="lt-time">
+											<p></p>
+										</div>	
+									</div>
+								</li> 
+
+ 								<!-- Fourth company info -->
+ 								<li>
+									<div class="clearfix">
+										<div class="lt-house hidden-sm">
+										</div>
+										<div class="col-sm-12 lt-exp-content">
+											<h4>
+												<span>
+													<i class="fa fa-briefcase"></i>
+												</span>
+												<span class="text">
+													U.S. Senator Larry Craig (R-Idaho)
+												</span>
+											</h4>
+											<p>
+												<b>Communications Director</b> and Press Secretary, Regional Director, Legislative Assistant, and Legislative Correspondent between 1997 and 2008
+											</p>
+											<ul>
+												<li>
+													<i class="fa fa-circle"></i>Oversaw all communications efforts, including press relations, web, content marketing, internal, Spanish language, and constituent mail
+												</li>
+												<li>
+													<i class="fa fa-circle"></i>Policy focus on energy, natural resources, public lands, recreation, mining, forestry, conservation, sportsmen, university-level research appropriations
+												</li>
+												<li>
+													<i class="fa fa-circle"></i>Managed national crisis communications
+												</li>
+												<li>
+													<i class="fa fa-circle"></i>Built relationships with national and Idaho media 
+												</li>												
+												<li>
+													<i class="fa fa-circle"></i>Produced video documentaries, including research, writing, filming, and post-production for a 44 counties in Idaho 
+												</li>												
+
+											</ul>
+										</div>
+										<div class="lt-time">
+											<p></p>
+										</div>	
+									</div>
+								</li> 
+
+
+								<!--End of companies-->
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Parallax-->
+		<section id="skill" class="parallax">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2">
+						<h2>
+							Results Achieved.
+						</h2>
+					</div>					
+<!-- 					<h2>Results Achieved.</h2>
+ --><!-- 					<div class="col-xs-6 col-sm-4 col-md-2 item">
+					 	<span class="chart" data-percent="80">
+					 		<span class="percent">PS</span>
+					 	</span>
+	      			</div>
+	      			<div class="col-xs-6 col-sm-4 col-md-2 item">
+					 	<span class="chart" data-percent="80">
+					 		<span class="percent">AI</span>
+					 	</span>
+	      			</div>
+	      			<div class="col-xs-6 col-sm-4 col-md-2 item">
+					 	<span class="chart" data-percent="70">
+					 		<span class="percent">AE</span>
+					 	</span>
+	      			</div>
+	      			<div class="col-xs-6 col-sm-4 col-md-2 item">
+					 	<span class="chart" data-percent="80">
+					 		<span class="percent">HTML</span>
+					 	</span>
+	      			</div>
+	      			<div class="col-xs-6 col-sm-4 col-md-2 item">
+					 	<span class="chart" data-percent="90">
+					 		<span class="percent">CSS</span>
+					 	</span>
+	      			</div>
+	      			<div class="col-xs-6 col-sm-4 col-md-2 item">
+					 	<span class="chart" data-percent="90">
+					 		<span class="percent">PHP</span>
+					 	</span>
+	      			</div>-->
+ 				</div>
+			</div>
+		</section>
+
+		<!-- Project -->
+		<section id="projects">
+			<div class="container">
+				<div class="row">
+					<h2>Projects</h2>
+<!-- 					<ul class="proj-nav col-xs-12 clearfix">
+	                    <li class="active">
+	                        <a data-filter="all" href="#">
+	                            All                        	
+	                        </a>
+	                    </li>
+	                    <li>
+	                        <a data-filter="css" href="#">
+	                            Graphic design                     
+	                        </a>
+	                    </li>
+	                    <li>
+	     	               	<a data-filter="design" href="#">
+	        	                Animation                        
+	        	            </a>
+	                    </li>
+	                    <li>
+	                        <a data-filter="html" href="#">
+	                            Film                        
+	                        </a>
+	                    </li>
+                    </ul> -->
+                     <ul id="proj-wrapper">
+						<li class="col-sm-4 col-md-4 lt-wrap-overlay" data-type="html" data-id="id-1">
+						 	<a href="img/portfolio/SILK-Parenting-logo.png"  rel="prettyPhoto[gallery1]" title="Single Income, Lots of Kids (SILK) Parenting - a web resource for parents.">
+						 		<img class="ani-scale" src="img/portfolio/SILK-Parenting-logo.png">
+						         <div class="lt-overlay ani-scale">
+						            <div class="title">
+						           		SILK Parenting                    
+						            </div>
+						            <div class="excerpt">
+						           		Single Income, Lots of Kids (SILK) Parenting
+						            </div>
+						            <div class="desc" style="display:none">
+						           		A web resource for parents raising kids on a single, or limited, income. 
+						            </div>
+						            <span class="zoom">
+							            <i class="fa fa-search fa-fw">
+							            </i>
+						            </span> 
+						         </div>
+						     </a>
+		      			</li>
+		      			<li class="col-sm-4 col-md-4 lt-wrap-overlay" data-type="design" data-id="id-2">
+		      				<a href="img/portfolio/capitolview.png"  rel="prettyPhoto[gallery1]" title="CapitolView.us - the first Congressional directory with an intuitive search feature.">
+						 		<img class=" ani-scale" src="img/portfolio/capitolview.png">
+						         <div class="lt-overlay ani-scale">
+						            <div class="title">
+						           		CapitolView.us              
+						            </div>
+						            <div class="excerpt">
+						           		A Congressional directory with intuitive, Google-like search. 
+						            </div>
+						            <div class="desc" style="display:none">
+						           		
+						            </div>
+						            <span class="zoom">
+							            <i class="fa fa-search fa-fw">
+							            </i>
+						            </span> 
+						         </div>
+						     </a>
+		      			</li>
+		      			<li class="col-sm-4 col-md-4 lt-wrap-overlay" data-type="html" data-id="id-3">
+		      				<a href="img/portfolio/polipsum.png"   rel="prettyPhoto[gallery1]" title="Polipsum - the political lorem ipsum generator.">
+							 	<img class=" ani-scale" src="img/portfolio/polipsum.png">
+						         <div class="lt-overlay ani-scale">
+						            <div class="title">
+						           		Polipsum                    
+						            </div>
+						            <div class="excerpt">
+						           		Generates lorem ipsum-style text from real political speeches. 
+						            </div>
+						            <div class="desc" style="display:none">
+						            </div>
+						            <span class="zoom">
+							            <i class="fa fa-search fa-fw">
+							            </i>
+						            </span> 
+						         </div>
+						     </a>
+		      			</li>
+		      			<li class="col-sm-4 col-md-4 lt-wrap-overlay" data-type="css" data-id="id-4">
+		      				<a href="img/portfolio/associationmarketer.png"  rel="prettyPhoto[gallery1]" title="Original posts at Association Marketer.">
+							 	<img class=" ani-scale" src="img/portfolio/associationmarketer.png">
+						         <div class="lt-overlay ani-scale">
+						            <div class="title">
+						           		Association Marketer                  
+						            </div>
+						            <div class="excerpt">
+						           		Original articles on marketing for associations. 
+						            </div>
+						            <div class="desc" style="display:none">
+						            </div>
+						            <span class="zoom">
+							            <i class="fa fa-search fa-fw">
+							            </i>
+						            </span> 
+						         </div>
+						     </a>
+		      			</li>
+		      			<li class="col-sm-4 col-md-4 lt-wrap-overlay" data-type="css" data-id="id-5">
+		      				<a href="img/portfolio/designcake.png"  rel="prettyPhoto[gallery1]" title="Original blogging at LinkedIn.">
+							 	<img class=" ani-scale" src="img/portfolio/designcake.png">
+						         <div class="lt-overlay ani-scale">
+						            <div class="title">
+						           		Thought Leadership at LinkedIn                    
+						            </div>
+						            <div class="excerpt">
+						           		Original posts on a variety of subjects, published at LinkedIn. 
+						            </div>
+						            <div class="desc" style="display:none">
+						            </div>
+						            <span class="zoom">
+							            <i class="fa fa-search fa-fw">
+							            </i>
+						            </span> 
+						         </div>
+						     </a>
+		      			</li>
+		      			<li class="col-sm-4 col-md-4 lt-wrap-overlay" data-type="html" data-id="id-6">
+		      				<a href="img/portfolio/platinumgate.png"  rel="prettyPhoto[gallery1]" title="PlatinumGATE Consulting's website.">
+							 	<img class=" ani-scale" src="img/portfolio/platinumgate.png">
+						         <div class="lt-overlay ani-scale">
+						            <div class="title">
+						           		PlatinumGATE Consulting                   
+						            </div>
+						            <div class="excerpt">
+						           		A website for a consulting firm. 
+						            </div>
+						            <div class="desc" style="display:none">
+						           		
+						            </div>
+						            <span class="zoom">
+										<i class="fa fa-search fa-fw">
+							            </i>
+						            </span> 
+						         </div>
+						     </a>
+		      			</li>
+		      		</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- Testimonial -->
+<!-- 		<section id="testimonial" class="clearfix" id="">
+		   <div class="container">
+		      <div class="testimonial">
+		         <div class="row">
+		         	<div class="flexslider">
+		         		<ul class="slides">
+				            <li>
+				            	<div class="col-sm-10 col-sm-offset-1">
+					               <p class="voice">
+					                  "Proin tristique vitae est quis lacinia duis cursus ligula nec."
+					               </p>
+					               <p class="position">
+					                  Thomas Brown - Art director at DREAM WORLD.ltd
+					               </p>
+				           		</div>
+				            </li>
+				            <li>
+				            	<div class="col-sm-10  col-sm-offset-1">
+					               <p class="voice">
+					                  "Proin 2 tristique vitae est quis lacinia duis cursus ligula nec."
+					               </p>
+					               <p class="position">
+					                  Thomas 2 Brown - Art director at DREAM WORLD.ltd
+					               </p>
+				               </div>
+				            </li>
+			            </ul>
+		            </div>
+		         </div>
+		      </div>
+		   </div>
+		</section>
+ -->
+		<!-- contact footer -->
+		<section id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 widget w-info">
+						<p class="title">
+							let's socialize
+						</p>
+						<ul class="clearfix">
+<!-- 							<li class="col-xs-2">
+								<a href="#">
+									<i class="fa fa-facebook-square"></i>
+								</a>
+							</li>
+ -->						<li class="col-xs-2" target="_blank">
+								<a href="http://www.twitter.com/danwhiting" target="_blank">
+									<i class="fa fa-twitter-square"></i>
+								</a>
+							</li>
+							<li class="col-xs-2" target="_blank">
+								<a href="https://plus.google.com/114446547083519703310/posts">
+									<i class="fa fa-google-plus-square"></i>
+								</a>
+							</li>
+							<li class="col-xs-2">
+								<a href="https://www.pinterest.com/danwhiting/" target="_blank">
+									<i class="fa fa-pinterest-square"></i>
+								</a>
+							</li>
+							<li class="col-xs-2">
+								<a href="https://www.linkedin.com/in/danwhiting" target="_blank">
+									<i class="fa fa-linkedin-square"></i>
+								</a>
+							</li>
+							<li class="col-xs-2">
+								<a href="https://github.com/danbwhiting" target="_blank">
+									<i class="fa fa-github-square"></i>
+								</a>
+							</li>
+<!-- 							<li class="col-xs-2">
+								<a href="#">
+									<i class="fa fa-rss"></i>
+								</a>
+							</li>
+ --><!-- 						<li class="col-xs-2">
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+							</li>
+							<li class="col-xs-2">
+								<a href="#">
+									<i class="fa fa-vimeo-square"></i>
+								</a>
+							</li>
+							<li class="col-xs-2">
+								<a href="#">
+									<i class="fa fa-youtube-square"></i>
+								</a>
+							</li>
+							<li class="col-xs-2">
+								<a href="#">
+									<i class="fa fa-flickr"></i>
+								</a>
+							</li>
+							<li class="col-xs-2">
+								<a href="#">
+									<i class="fa fa-instagram"></i>
+								</a>
+							</li>
+	 -->					</ul>
+						<p>Washington, DC</p>
+						<p>Phone: (202) 531-9091</p>
+						<p>Boise, Idaho</p>
+						<p>Phone: (208) 352-6405
+						<p>Email: <a href="mailto:dan@danwhiting.com" target="_top">dan@danwhiting.com</a></p>
+					</div>
+<!-- 					<div class="col-sm-4 widget w-contact">
+						<p class="title">
+							send a pigeon
+						</p>
+						<form action="mail.php" class="clearfix" id="ajax-contact-form" method="POST">
+							<input name="name" type="textbox" placeholder="Name:">
+							<input name="email" type="textbox" placeholder="Email:">
+							<textarea name="message"  placeholder="Message:"></textarea>
+							<input type="submit" class="submit" name="send" value="Send">
+							<p class="success hidden">Message sent!</p>
+							<p class="error hidden">Error happen. Please try again later</p>
+						</form>
+					</div> -->
+					<div class="col-sm-4 widget w-recent-proj" id="recent-projects">
+						<p class="title">
+							Recent projects
+						</p>
+						<ul class="project">
+							<li>
+								<a href="#">
+									<img src="img/footer/01.jpg" alt="">
+								</a>
+							</li>
+							<li class="even">
+								<a href="#">
+									<img src="img/footer/02.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/footer/03.jpg" alt="">
+								</a>
+							</li>
+							<li class="even">
+								<a href="#">
+									<img src="img/footer/04.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/footer/05.jpg" alt="">
+								</a>
+							</li>
+							<li class="even">
+								<a href="#">
+									<img src="img/footer/06.jpg" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+ 		<div id="overlay">
+				<img src="img/other/loading.gif">
+		</div>
+
+		<!-- footer -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<p class="col-xs-12 col-sm-5 copyright">
+						Original Theme Design Copyright © 2013 <a href="https://creativemarket.com/ThemesJuice">ThemesJuice</a>
+					</p>
+					<div class="col-xs-12 col-sm-7 ">
+						<div class="s-menu">
+							<ul>
+								<li>
+									<a href="#">Home</a>
+								</li>
+								<li>
+									<a href="#service">Services</a>
+								</li>
+								<li>
+									<a href="#experience">Profile</a>
+								</li>
+								<li>
+									<a href="#projects">Projects</a>
+								</li>
+								<li>
+									<a href="#testimonial">Testimonials</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>	
+
+		<script type="text/javascript" src="vendor/jquery2.js"></script>
+		<script type="text/javascript" src="vendor/moderniz.js"></script>
+		<script type="text/javascript" src="vendor/jquery.easing.1.3.js"></script>
+		 <!-- <script type="text/javascript" src="vendor/jquery.stellar.min.js"></script> -->
+		<script type="text/javascript" src="vendor/waypoints.min.js"></script>
+		<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+		
+		<script type="text/javascript" src="vendor/jquery.easypiechart.min.js"></script>
+		<script type="text/javascript" src="vendor/flexslider/jquery.flexslider.js"></script>
+		<script type="text/javascript" src="vendor/jquery-scrollto.js"></script>
+		<script type="text/javascript" src="vendor/jquery.quicksand.js"></script>
+		<script type="text/javascript" src="vendor/placeholders.min.js"></script>
+		<script type="text/javascript" src="vendor/prettyphoto/js/jquery.prettyPhoto.js"></script>
+		<script type="text/javascript" src="vendor/imagesloaded.pkgd.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+
+	</body>
+</html> 
