@@ -330,6 +330,7 @@ var layout =  {
 };
 $(document).ready(function() {	
 	layout.init();	
+	$('#emailAddress').html("<a href=\"mailto:dan@danwhiting.com?subject=Inquiry from your website\">dan@danwhiting.com</a>");
 });
 
 function isMobileDevice() {
