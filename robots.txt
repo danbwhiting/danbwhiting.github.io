@@ -1,0 +1,4 @@
+# robots.txt for danwhiting.com
+
+user-agent: *
+disallow: /a
